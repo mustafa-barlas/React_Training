@@ -1,0 +1,71 @@
+body{
+    margin-bottom:  300px;
+
+}
+footer{
+    background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+   body{
+    margin-bottom:  300px;
+   }
+
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @import "~react-image-gallery/styles/css/image-gallery.css";
+
+  @keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+  @keyframes slide-rotate-hor-top{0%{transform:translateY(0) rotateX(0deg)}100%{transform:translateY(-150px) rotateX(-90deg)}}
+  @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+  .rotate-center{animation:rotate-center .6s ease-in-out both}
+  .slide-rotate-hor-top{animation:slide-rotate-hor-top .5s cubic-bezier(.25,.46,.45,.94) both}
+  .scale-up-center{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
